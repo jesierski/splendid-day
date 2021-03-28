@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Flower recognition</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- Optional JavaScript; -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <p><h1>Your flower recognition</h1></p>
+    <div id="main_body">
+      <p>
+        <table>
+            <td>You've uploaded following picture:
+              <br>
+              <br>
+              <img src="{{flower_file}}" width=200>
+              <br>
+              <br>{% block print_path %} {{file_name}} {% endblock %}
+            </td>
+            <td>Result:
+              <br>{% block print_result %} {{recognition}} {% endblock %}
+            </td>
+        </table>
+      </p>
+    </div>
+    <p1><a href="/">[back]</a></p1>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+numpy
+pathlib
+pillow
+tensorflow
+tensorflow-datasets
+keras
+flask
+pylint
+pylint-exit

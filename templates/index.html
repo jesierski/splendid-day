@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Flower recognition</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+  <body>
+    <!-- Optional JavaScript;-->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <h1>Flower recognition</h1>
+      <div id="main_body">
+      <br>
+      <p>Select a flower picture to classify the kind of flower as daisy, dandelion, rose, sunflower, or tulip.</p>
+
+      <h2>File Upload</h2>
+      <form method="POST" action="" enctype="multipart/form-data">
+        <p1><input type="file" name="file_input"></p1>
+        <p1><input type="submit" value="Save picture"></p1>
+      </form>
+    <br>
+      <h2>Flower Recognition</h2>
+      <form method="POST" action="result" enctype="multipart/form-data">
+        <p1><input type="file" name="classify_input"></p1>
+        <p1><input type="submit" value="Flower recognition"></p1>
+      </form>
+      <br>
+      </div>
+  </body>
+</html>
